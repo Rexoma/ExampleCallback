@@ -94,7 +94,7 @@ async def help_admin(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -107,7 +107,7 @@ async def help_afk(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -119,7 +119,7 @@ async def help_carbon(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -131,7 +131,7 @@ async def help_connect(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -143,7 +143,7 @@ async def help_filter(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -155,7 +155,7 @@ async def help_group(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -167,7 +167,7 @@ async def help_locks(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -179,7 +179,7 @@ async def help_music(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -190,7 +190,7 @@ async def help_notes(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -203,7 +203,7 @@ async def help_rules(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -215,7 +215,7 @@ async def help_stickers(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -227,7 +227,7 @@ async def help_tools(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -239,7 +239,7 @@ async def help_user(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
@@ -252,7 +252,7 @@ async def help_welcome(event):
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            Button.inline("ᴄʟᴏsᴇ", data="close"), 
             ],
             ],
             ) 
