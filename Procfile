@@ -1,0 +1,1 @@
+BLAZE: bash start
