@@ -1,14 +1,17 @@
+import random
 from Bot import innexia, hndlr
 from telethon import events, Button
 from telethon.tl.custom import button
 from time import time
 from datetime import datetime
-  
+from assets.pics import PHOTO
+from assets.string import *
+
+HELP_PIC = f"{random.choice(PHOTO)}"
 
 
 @innexia.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hndlr))
 async def help(event):
-    if event.sender_id in SUDO_USERS:
        await event.client.send_file(event.chat_id,
                                   HELP_PIC,
                                   caption=HELP_TXT,
@@ -38,7 +41,7 @@ async def help(event):
             Button.inline("ᴡᴇʟᴄᴏᴍᴇ", data="welcome"),
            ], 
            [
-            Button.inline("ʙᴀᴄᴋ", data="ʙᴀᴄᴋ"),
+            Button.inline("ʙᴀᴄᴋ", data="home"),
            ],
            ], 
            )              
@@ -48,9 +51,8 @@ async def help(event):
 
            
            
-@Mig10.on(events.CallbackQuery(pattern=r"help_back"))
+@innexia.on(events.CallbackQuery(pattern=r"help_back"))
 async def helpback(event):
-   if event.query.user_id in SUDO_USERS:    
       await event.edit(
             Mig_Help,
             buttons=[
@@ -79,62 +81,194 @@ async def helpback(event):
             Button.inline("ᴡᴇʟᴄᴏᴍᴇ", data="welcome"),
            ], 
            [
-            Button.inline("ʙᴀᴄᴋ", data="ʙᴀᴄᴋ"),
+            Button.inline("ʙᴀᴄᴋ", data="home"),
            ],
            ], 
            )         
            
 From here                      
-@Mig10.on(events.CallbackQuery(pattern=r"spam"))
-async def help_spam(event):
-   if event.query.user_id in SUDO_USERS:    
+@innexia.on(events.CallbackQuery(pattern=r"admin"))
+async def help_admin(event):
        await event.edit(
-            spam_msg,
+            ADMIN_TXT,
             buttons=[
                 [
-            Button.inline("< Back", data="help_back"),
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
             ],
             ],
             ) 
-   else:
-        Alert = (
-                "Noob !! Make Your Own Mighty X Spam Bots !! @MightyXSpam"
-            )
-        await event.answer(Alert, cache_time=0, alert=True)
                  
                                                        
-@Mig10.on(events.CallbackQuery(pattern=r"raid"))
-async def help_raid(event):
-     if event.query.user_id in SUDO_USERS:
-        await event.edit(
-            raid_msg,
+@innexia.on(events.CallbackQuery(pattern=r"afk"))
+async def help_afk(event):
+       await event.edit(
+            AFK_TXT,
             buttons=[
-            [
-            Button.inline("< Back", data="help_back"),
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
             ],
             ],
-            )  
-     else:
-        Alert = (
-                "Noob !! Make Your Own Mighty X Spam Bots !! @MightyXSpam"
-            )
-        await event.answer(Alert, cache_time=0, alert=True)
-       
-
-
-@Mig10.on(events.CallbackQuery(pattern=r"extra"))
-async def help_extra(event):
-   if event.query.user_id in SUDO_USERS:
-        await event.edit(
-            extra_msg,
+            ) 
+                 
+@innexia.on(events.CallbackQuery(pattern=r"carbon"))
+async def help_carbon(event):
+       await event.edit(
+            CARBON_TXT,
             buttons=[
-            [
-            Button.inline("< Back", data="help_back"),                        
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
             ],
             ],
-            )
-   else:
-        Alert = (
-                "Noob !! Make Your Own Mighty X Spam Bots !! @MightyXSpam"
-            )
-        await event.answer(Alert, cache_time=0, alert=True)
+            ) 
+
+@innexia.on(events.CallbackQuery(pattern=r"connect"))
+async def help_connect(event):
+       await event.edit(
+            CONNECT_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+                 
+@innexia.on(events.CallbackQuery(pattern=r"filter"))
+async def help_filter(event):
+       await event.edit(
+            FILTER_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+
+@innexia.on(events.CallbackQuery(pattern=r"group"))
+async def help_group(event):
+       await event.edit(
+            GROUP_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+
+@innexia.on(events.CallbackQuery(pattern=r"locks"))
+async def help_locks(event):
+       await event.edit(
+            LOCK_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+                 
+@innexia.on(events.CallbackQuery(pattern=r"music"))
+async def help_music(event):
+       await event.edit(
+            MUSIC_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+@innexia.on(events.CallbackQuery(pattern=r"notes"))
+async def help_notes(event):
+       await event.edit(
+            NOTE_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+                 
+                                                       
+@innexia.on(events.CallbackQuery(pattern=r"rules"))
+async def help_rules(event):
+       await event.edit(
+            RULE_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+
+@innexia.on(events.CallbackQuery(pattern=r"stickers"))
+async def help_stickers(event):
+       await event.edit(
+            STCKR_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+                 
+@innexia.on(events.CallbackQuery(pattern=r"tools"))
+async def help_tools(event):
+       await event.edit(
+            TOOL_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+                 
+@innexia.on(events.CallbackQuery(pattern=r"user"))
+async def help_user(event):
+       await event.edit(
+            USER_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+                 
+                                                       
+@innexia.on(events.CallbackQuery(pattern=r"welcome"))
+async def help_welcome(event):
+       await event.edit(
+            WELCOME_TXT,
+            buttons=[
+                [
+            Button.inline("ʙᴀᴄᴋ", data="help_back"),
+            Button.inline("ᴄʟᴏsᴇ, data="close"), 
+            ],
+            ],
+            ) 
+                 
+                                                       
+                                                       
+                                                       
+                                                                        
+
+                 
+                                                       
+                                                       
+                 
+                                                       
+                 
+                                                       
+                                                       
+                                                       
+                                                       
