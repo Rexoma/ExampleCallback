@@ -6,9 +6,10 @@ from telethon import events, Button
 from telethon.tl.custom import button
 from Bot import innexia, OWNER_ID
 from Bot.help import *
-from Bot.assets.img import PIC
+from assets.pics import PHOTO
+from assets.string import *
 
-START_IMG = f"{random.choice(PIC)}"
+START_IMG = f"{random.choice(PHOTO)}"
 
 start_button = [
         ]
