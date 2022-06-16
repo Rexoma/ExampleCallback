@@ -6,11 +6,14 @@ from telethon import events, Button
 from telethon.tl.custom import button
 from Bot import innexia, OWNER_ID
 from Bot.help import *
-
+from Bot.assets.img import PIC
 
 START_IMG = f"{random.choice(PIC)}"
 
 start_button = [
+        ]
+        Button.url("ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ", "https://t.me/rexomasupport"),
+        ], 
         [
         Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/rexomasupport"), 
         Button.url("ᴜᴘᴅᴀᴛᴇs", "https://t.me/rexomaupdate")
@@ -18,9 +21,8 @@ start_button = [
         [
         Button.inline("ʜᴇʟᴘ ᴍᴇ", data="help_back"), 
         Button.inline("ᴀʙᴏᴜᴛ ᴍᴇ", data="innexia_about") 
-        ]
-        Button.url("ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ", "https://t.me/rexomasupport"),
-        ]
+        ], 
+]
                
                
         
