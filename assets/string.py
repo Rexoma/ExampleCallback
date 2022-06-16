@@ -58,6 +58,28 @@ NOTE:
 • These commands works on both pm and group.
 • These commands can be used by any group member.
 """
+BAN_TXT = """
+**𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙱𝙰𝙽 𝙼𝙾𝙳𝚄𝙻𝙴:**
+
+Make it easy to ban and unban with ban module!
+
+USAGE:
+➢ /ban [reason] - Ban an user with reason.
+➢ /kick [reason] - Kick an user with reason.
+➢ /kick [ghosts] - Kick all deleted accounts of chat.
+➢ /tban [reason] - Temporary ban an user with reason.
+➢ /sban [reason] - Silently ban an user with reason.
+➢ /dban [reason] - Delete message banning its sender.
+➢ /dkick [reason] - Delete message kicking its sender.
+➢ /skick [reason] - Silently kick an user with reason.
+➢ /unban - Unban an banned user or channel.
+➢ /sunban - Silently unban an banned user or channel.
+
+NOTE:
+• Innexia should have admin privillage.
+• Only admins can execute these in a chat.
+• These commands can be used only in group.
+"""
 
 CONNECT_TXT = """
 **𝙷𝚎𝚕𝚙 𝙵𝚘𝚛 𝙲𝚘𝚗𝚗𝚎𝚌𝚝 𝙼𝚘𝚍𝚞𝚕𝚎:**
@@ -90,12 +112,51 @@ NOTE:
 • Only admins can add filters in a chat.
 • Alert buttons have a limit of 64 characters.
 """
-GROUP_TXT = """
+EXTRA_TXT = """
+**𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙴𝚇𝚃𝚁𝙰 𝙼𝙾𝙳𝚄𝙻𝙴:**
+
+There are some of mine extra features, enjoy!
+
+USAGE:
+➢ /read - Read texts from any image.
+➢ /react - Add react button to message.
+➢ /write - Write text as handwriting.
+➢ /imdb - Get the film info from IMDb.
+➢ /proxy - Get active mtproto proxies.
+➢ /genstr - Generate pyrogram session.
+➢ /qfancy - Get quotes from QuoteFancy.
+➢ /download - Download files by direct link.
+
+NOTE:
+• Innexia should have admin privillage.
+• These commands works on both pm and group.
+• These commands can be used by any group member.
+
+FILTER_TXT = 
 
 LOCK_TXT = """
+
 MUSIC_TXT = """
+
 NOTE_TXT = 
 RULE_TXT =
 TOOL_TXT = 
-USER_TXT =
-WELCOME_TXT = 
+USER_TXT = """
+
+WELCOME_TXT = """
+**𝙷𝚎𝚕𝚙 𝙵𝚘𝚛 𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝙼𝚘𝚍𝚞𝚕𝚎:**
+Greet the new group members with welcome module!
+
+USAGE:
+➢ /welcome [on] - Enable welcome message.
+➢ /welcome [off] - Disable welcome message.
+➢ /captcha [on] - Enable welcome captcha.
+➢ /captcha [off] - Disable welcome captcha.
+➢ /setwelcome - Set a new welcome message.
+➢ /getwelcome - Get current welcome message.
+➢ /resetwelcome - Reset welcome message to default.
+
+NOTE:
+• Innexia should have admin privillage.
+• Only admins can execute these in a chat.
+• These commands can be used only in group.
