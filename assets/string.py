@@ -1,1 +1,9 @@
+import os
 
+ADMIN_TXT = 
+AFK_TEXT = 
+CARBON_TXT = 
+CONNECT_TXT = 
+FILTER_TXT = 
+
+WELCOME_TXT =
