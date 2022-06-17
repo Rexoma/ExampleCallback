@@ -8,7 +8,6 @@ from Bot import innexia, OWNER_ID
 from Bot.plugins.help import *
 from assets.pics import PHOTO
 
-START_IMG = f"{random.choice(PHOTO)}"
 
 start_button = [
         [
@@ -48,6 +47,6 @@ async def start(event):
                   buttons=start_button)
        else:
             await event.client.send_file(chatid,
-                  START_IMG,
+                  photo=f"{random.choice(PHOTO)}",
                   caption=usermsg, 
                   buttons=start_button)
