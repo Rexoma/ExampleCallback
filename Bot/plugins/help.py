@@ -13,9 +13,9 @@ HELP_PIC = f"{random.choice(PHOTO)}"
 
   
            
-@innexia.on(events.NewMessage(pattern="/help"))           
 @innexia.on(events.CallbackQuery(pattern=r"help_back"))
-async def helpback(event):
+@innexia.on(events.NewMessage(pattern="/help"))           
+async def help(event):
       await event.edit(
             HELP_TXT,
             buttons=[
