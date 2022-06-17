@@ -10,7 +10,7 @@ from Bot.plugins import *
 HELP_PIC = f"{random.choice(PHOTO)}"
 
 
-@innexia.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hndlr))
+@innexia.on(events.NewMessage(pattern="/help"))
 async def help(event):
        await event.client.send_file(event.chat_id,
                                   HELP_PIC,
