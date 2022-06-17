@@ -6,157 +6,66 @@ HELP_TXT = """
 """
 
 ADMIN_TXT = """
-**𝙷𝚎𝚕𝚙 𝙵𝚘𝚛 𝙰𝚍𝚖𝚒𝚗 𝙼𝚘𝚍𝚞𝚕𝚎:**
-
-Make it easy to promote and demote with admin module!
-
-USAGE:
-➢ /promote - Promote an user as admin.
-➢ /promote [title] - Promote an user with title.
-➢ /spromote - Silently promote an user as admin.
-➢ /demote - Demote an promoted admin.
-➢ /sdemote - Silently demote an admin.
-➢ /fpromote - Promote an user with all rights.
-➢ /set_title - Set or change title of an admin.
-➢ /admincache - Force refresh the admins list.
-
-NOTE:
-• Innexia should have admin privillage.
-• Only admins can execute these in a chat.
-• These commands can be used only in group.
+✘ Some people need to be publicly banned; spammers, annoyances, or just trolls.
+Make it easy to promote and demote users with the admin module!
+‣ /tban - Ban A User For Specific Time
+‣ /warn - Warn A User
+‣ /dwarn - Delete the replied message warning its sender
+‣ /rmwarns - Remove All Warning of A User
+‣ /warns - Show Warning Of A User
+‣ /promote - Promote A Member
+‣ /fullpromote - Promote A Member With All Rights
+‣ /demote - Demote A Member
+‣ /tmute - Mute A User For Specific Time
+‣ /ban_ghosts - Ban Deleted Accounts
+‣ /report | @admins | @admin - Report A Message To Admins.
+➥ you promote or demote an admin manually, 
+and Innexia doesn't realise it immediately. This is because 
+to avoid spamming telegram servers, admin status is cached locally.
 """ 
 
-AFK_TEXT = """
-**𝙷𝚎𝚕𝚙 𝙵𝚘𝚛 𝙰𝚏𝚔 𝙼𝚘𝚍𝚞𝚕𝚎:**
-
-Away From Keyboard is to tell that you're not available!
-
-USAGE:
-➢ /afk - Mark yourself as afk.
-➢ /afk [reason] - Mark yourself as afk with reason.
-➢ brb [reason] - Same as the afk command, but not a command.
-
-NOTE:
-• Innexia should have admin privillage.
-• These commands can be used only in group.
-• These commands can be used by any group member.
+AFK_TXT = """
+✘ Enables afk for your account
+✘description: When you are in afk if any one tags you then your bot will reply as he is offline.
+✘AFK mean away from keyboard.
+options: If you want AFK reason with reason.
+‣ usage: /afk <reason>
+‣ examples: /afk Let Me Sleep.
+‣ note: "Switches off AFK when you type back anything, anywhere. You can use #afk in message to continue in afk without breaking it.
 """
- 
-CARBON_TXT = """
-**𝙷𝚎𝚕𝚙 𝙵𝚘𝚛 𝙲𝚊𝚛𝚋𝚘𝚗 𝙼𝚘𝚍𝚞𝚕𝚎:**
 
-Beautify your code using carbon.now.sh!
+ANTICHANNEL_TXT = """
+your groups to stop anonymous channels sending messages into your chats.
+*Type of messages*
+‣ document
+‣ photo
+‣ sticker
+‣ animation
+‣ video
+‣ text
+✘ Admin Commands
+‣ /antichannel [on / off] - Anti- channel  function 
+➥Note: If linked_channel  send any containing characters in this type when on  function no del.
+""" 
 
-USAGE:
-➢ /carbon [text] - Create carbon from the given text.
-➢ /carbon [reply] - Create carbon from the replied text.
-➢ /carbon [text]|[colour] - Create carbon with custom colour.
-➢ /carbon [reply] [colour] - Create carbon with custom colour.
-
-NOTE:
-• Innexia should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member.
-"""
 BAN_TXT = """
-**𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙱𝙰𝙽 𝙼𝙾𝙳𝚄𝙻𝙴:**
+✘ Some people need to be publicly banned; spammers, annoyances, or just trolls.
 
-Make it easy to ban and unban with ban module!
+‣ ?kickme - To self Kick you from a chat.
+‣ ?kick - To kick someone from a chat.
+‣ ?unban - To unban a member from the chat.
+‣ ?ban - To Ban Someone from a chat.
+‣ ?dban - To delete the replied msg and bans the user.
+‣ ?sban - To delete the replied msg and kicks the user.
+‣ ?skick - To Delete Your msg and kicks the user 
+‣ ?dkick - To delete your msg and and kicks the replied user.
+"""
+CLEANER_TXT = """
+✘ This is A Module To Remove Deleted Accounts From Your Groups!
 
-USAGE:
-➢ /ban [reason] - Ban an user with reason.
-➢ /kick [reason] - Kick an user with reason.
-➢ /kick [ghosts] - Kick all deleted accounts of chat.
-➢ /tban [reason] - Temporary ban an user with reason.
-➢ /sban [reason] - Silently ban an user with reason.
-➢ /dban [reason] - Delete message banning its sender.
-➢ /dkick [reason] - Delete message kicking its sender.
-➢ /skick [reason] - Silently kick an user with reason.
-➢ /unban - Unban an banned user or channel.
-➢ /sunban - Silently unban an banned user or channel.
-
-NOTE:
-• Innexia should have admin privillage.
-• Only admins can execute these in a chat.
-• These commands can be used only in group.
+‣ /zombies - To find zombies accounts in your chat.
+‣ /zombies clean - To remove the deleted accounts from your chat.
 """
 
-CONNECT_TXT = """
-**𝙷𝚎𝚕𝚙 𝙵𝚘𝚛 𝙲𝚘𝚗𝚗𝚎𝚌𝚝 𝙼𝚘𝚍𝚞𝚕𝚎:**
-
-Connect bot to your PM to avoid spamming in groups!
-
-USAGE:
-➢ /connect - Connect a specific chat.
-➢ /disconnect - Disconnect from a chat.
-➢ /connections - View your all connections.
-
-NOTE:
-• Innexia should have admin privillage.
-• Only group admins can add a connection.
-• Send /connect for connect me to ur PM
-"""
-FILTER_TXT = """
-**𝙷𝚎𝚕𝚙 𝙵𝚘𝚛 𝙵𝚒𝚕𝚝𝚎𝚛 𝙼𝚘𝚍𝚞𝚕𝚎:**
-
-Manual Filter is the feature where users can set automated replies for a particular keyword and bot will respond whenever a keyword is found the message!
-
-USAGE:
-➢ /filter - Add a filter in the chat.
-➢ /filters - View all the filters of the chat.
-➢ /stop - Delete a specific filter in the chat.
-➢ /stopall - Delete all filters in the chat. (chat owner only)
-
-NOTE:
-• Innexia should have admin privillage.
-• Only admins can add filters in a chat.
-• Alert buttons have a limit of 64 characters.
-"""
 EXTRA_TXT = """
-**𝙷𝙴𝙻𝙿 𝙵𝙾𝚁 𝙴𝚇𝚃𝚁𝙰 𝙼𝙾𝙳𝚄𝙻𝙴:**
-
-There are some of mine extra features, enjoy!
-
-USAGE:
-➢ /read - Read texts from any image.
-➢ /react - Add react button to message.
-➢ /write - Write text as handwriting.
-➢ /imdb - Get the film info from IMDb.
-➢ /proxy - Get active mtproto proxies.
-➢ /genstr - Generate pyrogram session.
-➢ /qfancy - Get quotes from QuoteFancy.
-➢ /download - Download files by direct link.
-
-NOTE:
-• Innexia should have admin privillage.
-• These commands works on both pm and group.
-• These commands can be used by any group member.
-
-FILTER_TXT = 
-
-LOCK_TXT = """
-
-MUSIC_TXT = """
-
-NOTE_TXT = 
-RULE_TXT =
-TOOL_TXT = 
-USER_TXT = """
-
-WELCOME_TXT = """
-**𝙷𝚎𝚕𝚙 𝙵𝚘𝚛 𝚆𝚎𝚕𝚌𝚘𝚖𝚎 𝙼𝚘𝚍𝚞𝚕𝚎:**
-Greet the new group members with welcome module!
-
-USAGE:
-➢ /welcome [on] - Enable welcome message.
-➢ /welcome [off] - Disable welcome message.
-➢ /captcha [on] - Enable welcome captcha.
-➢ /captcha [off] - Disable welcome captcha.
-➢ /setwelcome - Set a new welcome message.
-➢ /getwelcome - Get current welcome message.
-➢ /resetwelcome - Reset welcome message to default.
-
-NOTE:
-• Innexia should have admin privillage.
-• Only admins can execute these in a chat.
-• These commands can be used only in group.
+"""
