@@ -5,4 +5,5 @@ from Bot.plugins.chatbot import CHATBOT_TXT
 
 
 HELP_TXT = """
+Welcome to Innexia Help Section
 """
