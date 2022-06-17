@@ -10,26 +10,8 @@ from Bot.plugins import *
 HELP_PIC = f"{random.choice(PHOTO)}"
 
 
-@innexia.on(events.NewMessage(pattern="/help"))
-async def help(event):
-       await event.client.send_file(event.chat_id,
-                                  HELP_PIC,
-                                  caption=HELP_TXT,
-                                  buttons=[
-           [
-            Button.inline("ᴀᴅᴍɪɴ", data="admin"),
-            Button.inline("ᴀғᴋ", data="afk"),
-            Button.inline("ᴄʜᴀᴛʙᴏᴛ", data="chatbot"),
-           ],
-           [
-            Button.inline("ʙᴀᴄᴋ", data="home"),
-           ],
-           ], 
-           )              
 
   
-  
-
            
            
 @innexia.on(events.CallbackQuery(pattern=r"help_back"))
