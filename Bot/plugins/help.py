@@ -1,5 +1,5 @@
 import random
-from Bot import innexia, hndlr
+from Bot import innexia, CMD_HNDLR as hndlr
 from telethon import events, Button
 from telethon.tl.custom import button
 from time import time
