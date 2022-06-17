@@ -5,7 +5,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, Button
 from telethon.tl.custom import button
 from Bot import innexia, OWNER_ID
-from Bot.help import *
+from Bot.help.plugins import *
 from assets.pics import PHOTO
 
 START_IMG = f"{random.choice(PHOTO)}"
