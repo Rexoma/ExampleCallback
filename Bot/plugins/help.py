@@ -5,7 +5,7 @@ from telethon.tl.custom import button
 from time import time
 from datetime import datetime
 from assets.pics import PHOTO
-from assets.string import *
+from Bot.plugins import *
 
 HELP_PIC = f"{random.choice(PHOTO)}"
 
@@ -19,27 +19,8 @@ async def help(event):
            [
             Button.inline("ᴀᴅᴍɪɴ", data="admin"),
             Button.inline("ᴀғᴋ", data="afk"),
-            Button.inline("ᴄᴀʀʙᴏɴ", data="carbon"),
+            Button.inline("ᴄʜᴀᴛʙᴏᴛ", data="chatbot"),
            ],
-           [
-            Button.inline("ᴄᴏɴɴᴇᴄᴛ", data="connect"),
-            Button.inline("ғɪʟᴛᴇʀ", data="filter"),
-            Button.inline("ɢʀᴏᴜᴘ", data="group"),
-           ],
-           [
-            Button.inline("ʟᴏᴄᴋs", data="locks"),
-            Button.inline("ᴍᴜsɪᴄ", data="music"), 
-            Button.inline("ɴᴏᴛᴇs", data="notes"), 
-           ],
-           [
-            Button.inline("ʀᴜʟᴇs", data="rules"),           
-            Button.inline("sᴛɪᴄᴋᴇʀs", data="stickers"),
-            Button.inline("ᴛᴏᴏʟs", data="tools"),
-           ], 
-           [
-            Button.inline("ᴜsᴇʀ", data="user"),
-            Button.inline("ᴡᴇʟᴄᴏᴍᴇ", data="welcome"),
-           ], 
            [
             Button.inline("ʙᴀᴄᴋ", data="home"),
            ],
@@ -54,32 +35,13 @@ async def help(event):
 @innexia.on(events.CallbackQuery(pattern=r"help_back"))
 async def helpback(event):
       await event.edit(
-            Mig_Help,
+            HELP_TXT,
             buttons=[
-           [
+            [
             Button.inline("ᴀᴅᴍɪɴ", data="admin"),
             Button.inline("ᴀғᴋ", data="afk"),
-            Button.inline("ᴄᴀʀʙᴏɴ", data="carbon"),
+            Button.inline("ᴄʜᴀᴛʙᴏᴛ", data="chatbot"),
            ],
-           [
-            Button.inline("ᴄᴏɴɴᴇᴄᴛ", data="connect"),
-            Button.inline("ғɪʟᴛᴇʀ", data="filter"),
-            Button.inline("ɢʀᴏᴜᴘ", data="group"),
-           ],
-           [
-            Button.inline("ʟᴏᴄᴋs", data="locks"),
-            Button.inline("ᴍᴜsɪᴄ", data="music"), 
-            Button.inline("ɴᴏᴛᴇs", data="notes"), 
-           ],
-           [
-            Button.inline("ʀᴜʟᴇs", data="rules"),           
-            Button.inline("sᴛɪᴄᴋᴇʀs", data="stickers"),
-            Button.inline("ᴛᴏᴏʟs", data="tools"),
-           ], 
-           [
-            Button.inline("ᴜsᴇʀ", data="user"),
-            Button.inline("ᴡᴇʟᴄᴏᴍᴇ", data="welcome"),
-           ], 
            [
             Button.inline("ʙᴀᴄᴋ", data="home"),
            ],
@@ -112,10 +74,10 @@ async def help_afk(event):
             ],
             ) 
                  
-@innexia.on(events.CallbackQuery(pattern=r"carbon"))
+@innexia.on(events.CallbackQuery(pattern=r"chatbot"))
 async def help_carbon(event):
        await event.edit(
-            CARBON_TXT,
+           CHATBOT_TXT,
             buttons=[
                 [
             Button.inline("ʙᴀᴄᴋ", data="help_back"),
@@ -124,151 +86,6 @@ async def help_carbon(event):
             ],
             ) 
 
-@innexia.on(events.CallbackQuery(pattern=r"connect"))
+@innexia.on(events.CallbackQuery(pattern=r"close"))
 async def help_connect(event):
-       await event.edit(
-            CONNECT_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-                 
-@innexia.on(events.CallbackQuery(pattern=r"filter"))
-async def help_filter(event):
-       await event.edit(
-            FILTER_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-
-@innexia.on(events.CallbackQuery(pattern=r"group"))
-async def help_group(event):
-       await event.edit(
-            GROUP_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-
-@innexia.on(events.CallbackQuery(pattern=r"locks"))
-async def help_locks(event):
-       await event.edit(
-            LOCK_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-                 
-@innexia.on(events.CallbackQuery(pattern=r"music"))
-async def help_music(event):
-       await event.edit(
-            MUSIC_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-@innexia.on(events.CallbackQuery(pattern=r"notes"))
-async def help_notes(event):
-       await event.edit(
-            NOTE_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-                 
-                                                       
-@innexia.on(events.CallbackQuery(pattern=r"rules"))
-async def help_rules(event):
-       await event.edit(
-            RULE_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-
-@innexia.on(events.CallbackQuery(pattern=r"stickers"))
-async def help_stickers(event):
-       await event.edit(
-            STCKR_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-                 
-@innexia.on(events.CallbackQuery(pattern=r"tools"))
-async def help_tools(event):
-       await event.edit(
-            TOOL_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-                 
-@innexia.on(events.CallbackQuery(pattern=r"user"))
-async def help_user(event):
-       await event.edit(
-            USER_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-                 
-                                                       
-@innexia.on(events.CallbackQuery(pattern=r"welcome"))
-async def help_welcome(event):
-       await event.edit(
-            WELCOME_TXT,
-            buttons=[
-                [
-            Button.inline("ʙᴀᴄᴋ", data="help_back"),
-            Button.inline("ᴄʟᴏsᴇ", data="close"), 
-            ],
-            ],
-            ) 
-                 
-                                                       
-                                                       
-                                                       
-                                                                        
-
-                 
-                                                       
-                                                       
-                 
-                                                       
-                 
-                                                       
-                                                       
-                                                       
-                                                       
+       await event.delete() 
