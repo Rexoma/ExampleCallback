@@ -42,11 +42,11 @@ async def start(event):
        usermsg = f"𝙷𝙴𝙻𝙻𝙾 [{firstname}](tg://user?id={userid}),\n𝙼𝚈 𝙽𝙰𝙼𝙴 𝙸𝚂 [{bot_name}](tg://user?id={bot_id}), 𝙰 𝙿𝙾𝚆𝙴𝚁𝙵𝚄𝙻 𝚂𝙼𝙰𝚁𝚃 𝙶𝚁𝙾𝚄𝙿 𝚁𝙾𝙱𝙾𝚃\n𝚆𝙸𝚃𝙷 𝙼𝙰𝙽𝚈 𝙰𝙼𝙰𝚉𝙸𝙽𝙶 𝙵𝙴𝙰𝚃𝚄𝚁𝙴𝚂. 𝙸 𝙲𝙰𝙽 𝙷𝙴𝙻𝙿 𝚈𝙾𝚄 𝚃𝙾 𝙼𝙰𝙽𝙰𝙶𝙴 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿𝚂,\n𝙹𝚄𝚂𝚃 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 𝙰𝙽𝙳 𝙴𝙽𝙹𝙾𝚈"
        if event.sender_id == OWNER_ID:
             await event.client.send_file(chatid,
-                  START_IMG,
+                  file=f"{random.choice(PHOTO)}",
                   caption=ownermsg, 
                   buttons=start_button)
        else:
             await event.client.send_file(chatid,
-                  photo=f"{random.choice(PHOTO)}",
+                  file=f"{random.choice(PHOTO)}",
                   caption=usermsg, 
                   buttons=start_button)
