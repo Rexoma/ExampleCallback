@@ -11,7 +11,7 @@ from assets.pics import PHOTO
 START_IMG = f"{random.choice(PHOTO)}"
 
 start_button = [
-        ]
+        [
         Button.url("ᴀᴅᴅ ᴍᴇ ᴛᴏ ɢʀᴏᴜᴘ", "https://t.me/rexomasupport"),
         ], 
         [
