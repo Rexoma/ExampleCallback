@@ -48,6 +48,6 @@ async def start(event):
                   buttons=start_button)
        else:
             await event.client.send_file(chatid,
-                  blaze",
+                  blaze,
                   caption=usermsg, 
                   buttons=start_button)
